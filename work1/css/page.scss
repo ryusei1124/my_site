@@ -1,0 +1,1041 @@
+/*-------------------
+変数
+---------------------*/
+$colors: (
+  black: #000,
+  white: #fff,
+);
+
+
+/*-------------------
+温泉
+---------------------*/
+// 温泉背景
+.spring_bg{
+  background-image: url("../img/spring/spring7.jpg");
+}
+.spring_list{
+  border-top: 1px solid #000;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .spring_title{
+    width: 20%;
+    border-bottom: 1px solid map-get($colors, black);
+    padding: 20px 0;
+    text-align-last: justify;
+  }
+  .spring_text{
+    width: 80%;
+    border-bottom: 1px solid map-get($colors, black);
+    padding: 20px 0 20px 40px ;
+  }
+}
+.facility_wrap{
+  background-color: rgba(255, 255, 255, .9);
+  width: 90%;
+  margin: 100px auto;
+  border-radius: 30px;
+  padding: 80px;
+  .facility{
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .spring_list{
+    .spring_title{
+      width: 20%;
+      text-align-last: left;
+    }
+    .spring_text{
+      width: 80%;
+    }
+  }
+}
+/*-------------------
+環境
+---------------------*/
+// 環境背景
+.environment_bg{
+  background-image: url("../img/environment/environment1.jpeg");
+}
+
+/*-------------------
+館内
+---------------------*/
+// 館内背景
+.facility_bg{
+  background-image: url("../img/facility/facility1.jpeg");
+}
+.menu{
+  width: 85%;
+  margin: 0 auto;
+  border-top: 1px solid map-get($colors, black);
+  border-bottom: 1px solid map-get($colors, black);
+  transition: .3s;
+  &:hover{
+    background-color: #fff;
+  }
+  .menu_accordion{
+    padding: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu_accordion_txt{
+      font-size: 1.5rem;
+    }
+    .menu_accordion_btn{
+      width: 50px;
+      height: 50px;
+      border: 1px solid map-get($colors, black);
+      border-radius: 50%;
+      position: relative;
+      &::before,
+      &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: map-get($colors, black);
+        transition: .5s;
+        width: 20px;
+        height: 1px;
+      }
+      &::after{
+        transform: rotate(-90deg);
+        left: 15px;
+      }
+    }
+    .menu_accordion_btn.active{
+      &::after{
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .menu_wrap{
+    background-color: map-get($colors, white);
+    padding: 30px;
+    display: none;
+    .menu_inner{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .menu_list_wrap{
+        width: calc(100% / 2 - 10px);
+        .menu_list{
+          font-size: 1.25rem;
+          margin-bottom: 10px;
+        }
+        .menu_item{
+          background-color: #eee;
+          padding: 20px 15px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2px;
+        }
+      }
+    }
+    .menu_remarks{
+      margin-bottom: 5px;
+    }
+  }
+}
+.massage_wrap{
+  flex-direction: column;
+  .massage_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+
+
+/*-------------------
+食事
+---------------------*/
+// 食事背景
+.meal_bg{
+  background-image: url("../img/meal/meal2.jpeg");
+}
+.sec_meal_wrap{
+  flex-direction: column;
+  .sec_meal_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item_wrap{
+    padding-top: 140px;
+  }
+  &:nth-child(even){
+    .sec_meal_inner{
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.page_visual{
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;  
+  .visual_inner{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+  .visual_title{
+    color: map-get($colors, white);
+    font-size: 2rem;
+    letter-spacing: 10px;
+    writing-mode: vertical-rl;
+    margin: 0 auto;
+    text-shadow: 3px 3px 3px #555;
+  }
+}
+
+/*-------------------
+利用案内･料金･アクセス
+---------------------*/
+.section_title{
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.guidance_bg{
+  background-color: rgba(255, 255, 255, .9);
+  width: 90%;
+  margin: 100px auto;
+  border-radius: 30px;
+  padding: 80px;
+  .news_wrap{
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+  }
+}
+.guidance_top{
+  margin-bottom: 80px;
+  text-align: center;
+  .guidance_title{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+  .today{
+    font-size: 1.5rem;
+  }
+}
+.business{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+  .business_left{
+    width: 30%;
+    .business_place{
+      font-size: 1.25rem;
+      padding-bottom: 10px;
+      margin: 40px 0 10px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid map-get($colors, black);
+    }
+    .business_hours{
+      letter-spacing: 2px;
+    }
+  }
+  .business_right{
+    width: 60%;
+    position: relative;
+    // カレンダー
+    .calendar_wrap{
+      margin-bottom: 20px;
+      .month {
+        width: 60%;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto 20px;
+        .fas{
+          font-size: 2rem;
+          cursor: pointer;
+        }
+        .year_month{
+          display: inline-block;
+          font-size: 2rem;
+          font-weight: 300;
+          letter-spacing: 0.2rem;
+        }
+        .date_txt{
+          font-size: 1.6rem;
+        }
+      }
+      .weekdays{
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #E4EDEA;
+        background-color: #fff;
+        thead tr{
+          background-color: #FBFBFB;
+          .week{
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 10px 0;
+            border-right: 1px solid #E4EDEA;
+            border-bottom: 1px solid #E4EDEA;
+          }
+          /*日曜日*/
+          .week:first-child {
+            color: #EC4242;
+          }
+          /*土曜日*/
+          .week:last-child {
+            color: #8ECCF2;
+          }
+        }
+        .day{
+          text-align: right;
+          padding: .5em;
+          height: 4.5em;
+          vertical-align: baseline;
+          border-right: 1px solid #E4EDEA;
+          border-bottom: 1px solid #E4EDEA;
+        }
+        /*前後月の日付*/
+        .day.disabled {
+          color: #ccc;
+        }
+        .today{
+          background-color: #FFFFCC;
+        }
+      }
+    }
+    // 営業日、休館日
+    .holiday{
+      letter-spacing: 2px;
+      margin-right: 50px;
+      display: block;
+      margin-right: 0;
+      position: relative;
+      text-align: right;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 60px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .holiday::before{
+      background-color: #FFF0F5;
+    }
+  }
+}
+.price_wrap{
+  margin-bottom: 230px;
+  .price_table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid map-get($colors, black);
+    &.pc{
+      display: table;
+    }
+    &.sp{
+      display: none;
+    }
+    th, td{
+      width: calc(100% / 4);
+      padding: 1em;
+      text-align: center;
+      border-bottom: 1px solid map-get($colors, black);
+      border-right: 1px solid map-get($colors, black);
+      &:last-child{
+        border-right: none;
+      }
+    }
+    th{
+      background-color: #ccc;
+      font-weight: 300;
+      span{
+        font-size: 0.875rem;
+      }
+    }
+    td{
+      background-color: map-get($colors, white);
+    }
+  }
+  .price_remarks{
+    margin-top: 10px;
+    font-size: 0.750rem;
+  }
+}
+.access_wrap{
+  .access_info_wrap{
+    display: flex;
+    justify-content: space-between;
+    .access_info_inner{
+      width: 48%;
+      .access_guide_ttl{
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        &:nth-of-type(2){
+          margin-top: 30px;
+        }
+        .access_img{
+          width: 30px;
+          margin-right: 5px;
+        }
+      }
+      .access_remarks{
+        font-size: 0.750rem;
+        margin-top: 20px;
+      }
+    }
+  }
+  iframe{
+    width: 100%;
+    height: 750px;
+    margin-bottom: 60px;
+  }
+}
+
+/*-------------------
+採用情報
+---------------------*/
+.recruit{
+  background-color: rgba(255, 255, 255, .9);
+  margin: 100px auto;
+  border-radius: 30px;
+  padding: 80px;
+  width: 60%;
+  .recruit_title{
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .instructor_wrap{
+    margin-bottom: 100px;
+    .instructor_ttl{
+      writing-mode: vertical-rl;
+      line-height: 3;
+      margin: 0 auto;
+      font-size: 1.25rem;
+      margin-bottom: 100px;
+      height: 200px;
+    }
+    .instructor_txt{
+      margin-bottom: 15px;
+      line-height: 2;
+      font-size: 0.9375rem;
+    }
+  }
+  .application_method{
+    text-align: center;
+    margin-bottom: 80px;
+    .method_title{
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .method_text{
+      line-height: 2;
+      font-size: 0.875rem;
+      padding-bottom: 20px;
+    }
+    .list_btn{
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+/*-------------------
+お問い合わせ
+---------------------*/
+.contact{
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 30px;
+  padding: 50px;
+  width: 70%;
+  margin: 100px auto;
+  .contact_title{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.125rem;
+    margin-bottom: 80px;
+  }
+  .contact_text{
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .text_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .contact_sub_text{
+      font-size: 0.8125rem;
+    }
+  }
+  .radio_wrapper{
+    display: flex;
+    .radio_label{
+      margin-right: 10px;
+      background-color: #eee;
+      padding: 1em 3em 1em 4em;
+      cursor: pointer;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        width: 17px;
+        height: 17px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 18.5px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        border-radius: 50%;
+        opacity: 0;
+      }
+    }
+    .radio_btn{
+      display: none;
+    }
+    .radio_btn:checked + .radio_label::after{
+      opacity: 1;
+    }
+    .radio_btn:checked + .radio_label{
+      background-color: #ccc;
+    }
+  }
+  .contact_label{
+    margin: 20px 0 10px;
+    display: block;
+    .mandatory{
+      color: #EA835A;
+      vertical-align: super;
+      font-size: 1.25rem;
+    }
+  }
+  .contact_form{
+    display: block;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: ts-unused;
+    &::placeholder{
+      opacity: .7;
+    }
+  }
+  .consent{
+    margin: 15px 0 35px;
+    text-align: center;
+    line-height: 2;
+    font-size: 0.9375rem;
+  }
+  .consent_text{
+    display: block;
+    width: 80%;
+    margin: 0 auto 60px;
+    background-color: map-get($colors, white);
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.5em 0;
+  }
+  .contact_submit{
+    color: map-get($colors, black);
+    width: 100%;
+    border: 1px solid #eee;
+    background-color: #eee;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    transition: .3s;
+    &:hover{
+      background-color: #ddd;
+    }
+  }
+  .tel_contact{
+    margin: 80px 0;
+    text-align: center;
+    .tel{
+      font-size: 2rem;
+      span{
+        font-size: 1.125rem;
+        letter-spacing: 1px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
+
+/*-------------------
+環境
+---------------------*/
+.explanation_wrap{
+  background-color: rgba(255, 255, 255, .9);
+  width: 90%;
+  margin: 100px auto;
+  border-radius: 30px;
+  padding: 100px 0;
+  .explanation_inner{
+    width: 45%;
+    margin: 0 auto;
+    .explanation_title{
+      text-align: center; 
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
+    .explanation_text{
+      line-height: 2;
+    }
+  }
+  .item_wrap{
+    margin: 150px auto 0;
+  }
+}
+
+.under_wrap{
+  background-color: rgba(255, 255, 255, .9);
+  width: 90%;
+  margin: 100px auto;
+  border-radius: 30px;
+  padding: 50px 0;
+  .under_title{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .under_list{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    li{
+      width: calc(100% / 4 - 30px);
+      .under_item{
+        display: block;
+        &:hover{
+          opacity: .5;
+        }
+        .under_item_title{
+          font-size: 1.25rem;
+          text-align: center;
+          margin-top: 20px;
+        }
+        .under_item_img{
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.item_wrap{
+  width: 85%;
+  .item_list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+      width: calc(100% / 3 - 30px);
+      margin-bottom: 70px;
+      .item_img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+      .item_txt{
+        font-size: 1.25rem;
+        margin-top: 20px;
+      }
+    }
+    .item_bottom{
+      position: relative;
+      top: 90px;
+    }
+    .item_top{
+      position: relative;
+      top: -90px;
+    }
+  }
+}
+
+/*-------------------
+タブレット
+---------------------*/
+@media screen and (max-width: 1020px){
+  .explanation_wrap{
+    .explanation_inner{
+      width: 60%;
+    }
+  } 
+  .contact{
+    width: 70%;
+    .text_wrap{
+      flex-direction: column;
+    }
+    .text_wrap{
+      flex-direction: column;
+      .contact_sub_text{
+        font-size: 0.8125rem;
+      }
+    }
+    .radio_wrapper{
+      .radio_label{
+        padding: 10px 10px 10px 40px;
+      }
+    } 
+    .tel_contact{
+      .contact_text{
+        font-size: 1rem;
+      }
+      .tel{
+        font-size: 1rem;
+        span{
+          font-size: 1rem;
+        }
+      }
+    } 
+  }
+  .business{
+    .business_right{
+      .calendar_wrap{
+        .month{
+          .year_month{
+            font-size: 1.5rem;
+          }
+        } 
+      } 
+    } 
+  } 
+}
+
+
+
+/*-------------------
+スマホ
+---------------------*/
+@media screen and (max-width: 768px){
+  .page_visual{
+    height: 100vh;
+    .visual_title{
+      font-size: 1.5rem;
+    }
+  }
+  .explanation_wrap{
+    .explanation_inner{
+      width: 85%;
+      .explanation_title{
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+      }
+    } 
+  } 
+  .under_wrap{
+    .under_title{
+      font-size: 1.25rem;
+    }
+    .under_list{
+      flex-wrap: wrap;
+      li{
+        margin-bottom: 20px;
+        width: calc(100% / 2 - .5em);
+        .under_item{  
+          .under_item_title{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  } 
+  .facility_wrap{
+    .facility{
+      font-size: 1.25rem;
+    }
+    .spring_list{
+      .spring_title{
+        width: 100%;
+        border-bottom: 0;
+        padding-bottom: 10px;
+      }
+      .spring_text{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+      }
+    } 
+  } 
+  .item_wrap{
+    margin: 100px auto 0;
+    .item_list{
+      flex-direction: column;
+      .item_bottom,
+      .item_center,
+      .item_top{
+        position: static;
+      }
+      li{
+        width: 80%;
+        margin-bottom: 20px;
+        &:nth-child(2n){
+          margin-left: 20%;
+        }
+        .item_img{
+          height: auto;
+        }
+        .item_txt{
+          font-size: 1rem;
+          margin-top: 10px;
+        }
+      }
+    }
+  } 
+  .menu{
+    .menu_accordion{
+      padding: 10px;
+      .menu_accordion_txt{
+        font-size: 1rem;
+      }
+      .menu_accordion_btn{
+        width: 30px;
+        height: 30px;
+        &::before{
+          width: 15px;
+        }
+        &::after{
+          width: 15px;
+          left: 7px;
+        }
+      }
+    }
+    .menu_wrap{
+      padding: 15px;
+      .menu_inner{
+        flex-direction: column;
+        .menu_list_wrap{
+          width: 100%;
+          margin-bottom: 20px;
+          .menu_list{
+            font-size: 1rem;
+          }
+        }
+      }
+      .menu_remarks{
+        line-height: 2;
+      }
+    }
+  }
+  .massage_wrap{
+    .massage_inner{
+      flex-direction: column;
+      width: 100%;
+    }
+  } 
+  .recruit{
+    width: 90%;
+    padding: 80px 40px;
+    .recruit_title{
+      font-size: 1.75rem;
+      margin-bottom: 50px;
+    }
+    .instructor_wrap{
+      .instructor_ttl{
+        font-size: 1rem;
+        margin-bottom: 50px;
+      }
+      .instructor_txt{
+        font-size: 0.750rem;
+      }
+    }
+    .application_method{
+      .method_title{
+        font-size: 1.25rem;
+      }
+      .method_text{
+        text-align: left;
+      }
+    }
+  }
+  .contact{
+    width: 90%;
+    padding: 50px 30px;
+    .contact_title{
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+    .radio_wrapper{
+      flex-direction: column;
+      .radio_label{
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    .consent{
+      font-size: 0.750rem;
+      text-align: left;
+    }
+    .consent_text{
+      width: 100%;
+      font-size: 0.750rem;
+      margin-bottom: 30px;
+    }
+    .contact_submit{
+      font-size: 1rem;
+    }
+    .tel_contact{
+      .contact_text{
+        font-size: 1rem;
+      }
+    }
+  }
+  .guidance_top{
+    .guidance_title{
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+  }
+  .guidance_bg{
+    width: 95%;
+    padding: 80px 30px 30px;
+  }
+  .business{
+    flex-direction: column;
+    margin-bottom: 100px;
+    .business_left{
+      width: 100%;
+      margin-bottom: 80px;
+      .section_title{
+        font-size: 1.25rem;
+      }
+      .business_place{
+        margin-top: 30px;
+        font-size: 1rem;
+      }
+      .business_hours{
+        font-size: 0.75rem;
+      }
+    }
+    .business_right{
+      width: 100%;
+      .calendar_wrap{
+        .month{
+          width: 70%;
+          .fas{
+            font-size: 1.75rem;
+          }
+        }
+        .weekdays{
+          thead tr{
+            .week{
+              font-size: 0.75rem;
+            }
+          }
+          .day{
+            height: 3em;
+            padding: .3em;
+          }
+        }
+      }
+    }
+  }
+  .section_title{
+    font-size: 1.25rem;
+  }
+  .price_wrap{
+    margin-bottom: 150px;
+    .price_table{
+      &.pc{
+        display: none;
+      }
+      &.sp{
+        display: table;
+        tbody{
+          .price_head{
+            th{
+              font-weight: 300;
+              text-align: center;
+              .age{
+                font-size: 0.750rem;
+              }
+            }
+          }
+          .price_body{
+            .day{
+              font-size: 0.750rem;
+              width: 10%;
+            }
+            .price{
+              font-size: 1rem;
+            }
+          }
+        }
+        tr{
+          padding: 10px;
+          border-bottom: 1px solid #6BBFBD;
+        }
+      }
+    }
+  }
+  .access_wrap{
+    margin-bottom: 0;
+    iframe{
+      height: 200px;
+    }
+    .access_info_wrap{
+      flex-direction: column;
+      .access_info_inner{
+        width: 100%;
+        margin-bottom: 20px;
+        .access_guide_ttl{
+          font-size: 1rem;
+        }
+      }
+    }
+  } 
+  .sec_meal_wrap{
+    .item_wrap{
+      padding-top: 0;
+    }
+    .sec_meal_inner{
+      flex-direction: column;
+    }
+    &:nth-child(even){
+      .sec_meal_inner{
+        flex-direction: column;
+      }
+    }
+  } 
+  .facility_wrap{
+    padding: 50px 30px;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  // 複数定義可、ファイルパスはこんな感じ
+// Ubuntu → file:///home/neputa/pictures/ghost-in-the-shell.jpg
+// Windows → file:///c:/Users/neputa/Pictures/ghost-in-the-shell.jpg
+"background.customImages": [
+  "file:///Users/owner/Downloads/BF784F17-0B90-43DC-A4A0-267ADEE1DB7F.JPG"
+],
+"background.style": {
+  "content": "''",
+  "pointer-events": "none",
+  "position": "absolute",
+  "width": "100%",
+  "height": "100%",
+  "z-index": "99999",
+  "background-repeat": "no-repeat",
+  "background-size": "80%",
+  "background-position": "center",
+  "opacity": 0.2
+},
+"background.useFront": false,
+"background.useDefault": false,
+"background.loop": false,
+// customImagesは環境によってパスが異なるため私は同期対象外にしている
+"settingsSync.ignoredSettings": [
+"background.customImages"
+],
+}

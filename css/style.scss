@@ -1069,7 +1069,7 @@ footer
   }
 }
 
-@media screen and (min-width:600px)and(max-width: 1020px) {
+@media screen and (max-width: 1020px) {
   .header_wrap{
     .header_inner{
       .title{
@@ -1303,7 +1303,8 @@ footer
         width: 5px;
       }
       .profile_item{
-        &:nth-child(2){
+        &:nth-child(2),
+        &:nth-child(5){
           .profile_img{
             margin-top: -130px;
           }
@@ -1390,32 +1391,5 @@ footer
     .author{
       font-size: 0.875rem;
     }
-  }
-}
-.swiper-container {
-  width: 100%;
-  
-  //スライダー
-  &.slider {
-      height: 80vh;
-  }
-  
-  //サムネイル
-  &.slider-thumbnail {
-      height: 20vh;
-      
-      .swiper-wrapper {
-          
-          .swiper-slide {
-              width: 25%;
-              height: 100%;
-              opacity: .5;
-              overflow: hidden;
-
-              &.swiper-slide-thumb-active {
-                  opacity: 1;
-              }
-          }
-      }
   }
 }

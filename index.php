@@ -81,14 +81,15 @@ if(isset($_POST['back']) && $_POST['back']){
 }
 ?>
 <!DOCTYPE html>
-<html lang="ja" prefix="og: http://ogp.me/ns#">
-<head>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta property="og:url" content="http://ryusei-site.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="otaka ryusei" />
-  <meta property="og:site_name" content="my_portfolio" />
-  <meta property="og:image" content="file:///Users/owner/Desktop/portfolio/img/portfolio_img.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="Otaka Ryusei" />
+  <meta property="og:description" content="ポートフォリオを作成いたしました。よければご覧ください。" />
+  <meta property="og:site_name" content="my_site" />
+  <meta property="og:image" content="https://i.gyazo.com/417b9202556fc293ee1c2e7d88b2b908.jpg" />
+  <meta name="twitter:card" content="Summary Card" />
   <meta name="twitter:site" content="@ryusei_studying" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -189,7 +190,7 @@ if(isset($_POST['back']) && $_POST['back']){
                   <li class="point_item">・各ページの共通部分のコードをまとめて作業しやすくしました。</li>
                 </ul>
                 <a href="work1/index.html" class="demo_link">サイトを見る</a>
-                <a href="https://github.com/ryusei1124/my_portfolio/tree/main/Desktop/portfolio/work1" class="code_link" target="_blank">コードを見る</a>
+                <a href="https://github.com/ryusei1124/my_site/tree/main/work1" class="code_link" target="_blank">コードを見る</a>
                 <p class="development_title">【 開発環境 】</p>
                 <ul class="development_list">
                   <li class="development_item">・言語<br><span>HTML、CSS、jQuery</span></li>
@@ -241,7 +242,7 @@ if(isset($_POST['back']) && $_POST['back']){
                   <li class="point_item">・スライドはjQueryのslickを使用</li>
                 </ul>
                 <a href="work2/work2.html" class="demo_link">サイトを見る</a>
-                <a href="https://github.com/ryusei1124/my_portfolio/tree/main/Desktop/portfolio/work2" class="code_link" target="_blank">コードを見る</a>
+                <a href="https://github.com/ryusei1124/my_site/tree/main/work2" class="code_link" target="_blank">コードを見る</a>
                 <p class="development_title">【 開発環境 】</p>
                 <ul class="development_list">
                   <li class="development_item">・言語<br><span>HTML、CSS、jQuery</span></li>
@@ -493,7 +494,7 @@ if(isset($_POST['back']) && $_POST['back']){
               </a>
             </li>
             <li class="sns_item">
-              <a href="https://github.com/ryusei1124/my_portfolio/tree/main/Desktop/portfolio" target="_blank">
+              <a href="https://github.com/ryusei1124/my_site" target="_blank">
                 <i class="fa-brands fa-github"></i>
               </a>
             </li>

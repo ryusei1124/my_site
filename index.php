@@ -161,7 +161,7 @@ if(isset($_POST['back']) && $_POST['back']){
         </figure>
         <div class="content_text_wrap">
           <p class="self_int">
-            大高龍世<br>1999年11月24日生まれ<br>高校卒業後、建築会社に就職。<br>知人の紹介で動画編集の仕事に転職。<br>旅行系のエンタメ動画や情報発信動画を編集。<br>現在は動画編集の仕事をしながらweb系のプログラミング言語を学習中！<br>お客様の問題解決ができる人材を目指してます！
+            大高龍世<br>1999年11月24日生まれ<br>高校卒業後、建築会社に就職。<br>知人の紹介で動画編集の仕事に転職。<br>旅行系のエンタメ動画や情報発信動画を編集。<br>現在は動画編集の仕事をしながらweb系のプログラミング言語を学習中！<br>お客様に満足していただける「即レスエンジニア」を目指してます！
           </p>
         </div> <!-- content_text_wrap-->
       </div> <!-- about_me_content-->
@@ -452,10 +452,10 @@ if(isset($_POST['back']) && $_POST['back']){
             </p>
           </li>
           <li class="profile_item">
-            <h3 class="year">2020</h3>
+            <h3 class="year">2020<span class="period">〜</span><span class="now">現在</span></h3>
             <img src="img/profile-4.jpg" alt="年表画像" class="profile_img">
             <p class="profile_text">
-              今後いつ仕事を失うか分からない時代に稼ぐ力をつけるために、需要が高いにプログラミングの学習を開始！
+              今後いつ仕事を失うか分からない時代に稼ぐ力をつけるために、需要が高いプログラミングの学習を開始！
             </p>
           </li>
           <li class="profile_item">

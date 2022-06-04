@@ -89,7 +89,7 @@ if(isset($_POST['back']) && $_POST['back']){
   <meta property="og:description" content="ポートフォリオを作成いたしました。よければご覧ください。" />
   <meta property="og:site_name" content="my_site" />
   <meta property="og:image" content="https://i.gyazo.com/417b9202556fc293ee1c2e7d88b2b908.jpg" />
-  <meta name="twitter:card" content="Summary Card" />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ryusei_studying" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -297,7 +297,7 @@ if(isset($_POST['back']) && $_POST['back']){
       <div class="container">
         <h2 class="section_title">My Skill set</h2>
         <p class="skill_text">
-          実務はまだないですが、学習経験のあるスキルをまとめました。<br>今後は実務を積んでいきスキルアップをしていきたいと考えております。
+          実務、学習経験のあるスキルをまとめました。<br>今後は実務を積んでいきスキルアップをしていきたいと考えております。
         </p>
         <ul class="skill_list">
           <li class="skill_item">
@@ -311,6 +311,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle html" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験あり</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -323,6 +324,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle css" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験あり</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -335,6 +337,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle sass" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験あり</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -347,6 +350,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle jquery" cx="50%" cy="50%" r="15.9154"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験なし、<br>基本的な機能は実装可能</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -359,6 +363,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle bootstrap" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験あり</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -371,6 +376,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle ruby" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験なし、<br>学習で投稿機能など作成</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -383,6 +389,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle php" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験なし、<br>学習で問い合わせ機能など作成</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -395,6 +402,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle wordpress" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験なし、<br>wordpress化可能</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -407,6 +415,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle mysql" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験なし、<br>学習で簡単なテーブル作成</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -419,6 +428,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle git" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
+            <p class="skill_item_txt">実務経験なし、<br>学習でgithubを使用する際に使用</p>
           </li>
         </ul> <!-- skill_list-->
       </div> <!-- container-->

@@ -12,4 +12,7 @@ $('.menu_accordion').click(function(){
   $(this).next().slideToggle();
 });
 
+// 画像遅延読み込み
+$("img.lazyload").lazyload();
+
 });

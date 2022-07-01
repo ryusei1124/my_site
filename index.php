@@ -99,14 +99,7 @@ if(isset($_POST['back']) && $_POST['back']){
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
-  <!-- jquery読み込み -->
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-  <!-- works/スライダー -->
-  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- jquery.inview.js読み込み -->
-  <script src="js/jquery.inview.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet"> 
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>RYUSEI | Portfolio</title>
   <link rel="icon" href="img/icon.png">
@@ -157,7 +150,7 @@ if(isset($_POST['back']) && $_POST['back']){
       <h2 class="section_title">About me</h2>
       <div class="about_me_content">
         <figure class="about_me_img">
-          <img src="img/me.JPG" alt="me_img">
+          <img data-src="img/me.JPG" class="lazyload" alt="me_img">
         </figure>
         <div class="content_text_wrap">
           <p class="self_int">
@@ -174,7 +167,7 @@ if(isset($_POST['back']) && $_POST['back']){
       <ul class="works_list">
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-1">
-            <img src="img/work1-1.png" alt="制作物" class="work_item_img">
+            <img data-src="img/work1-1.png" class="lazyload work_item_img" alt="制作物">
             <p class="work_item_title">ホームページ</p>
           </div>
           <div class="modal modal-1">
@@ -202,10 +195,10 @@ if(isset($_POST['back']) && $_POST['back']){
                 <!-- スライダー-->
                 <div class="swiper-container slider slider_1">
                   <div class="swiper-wrapper slider_thumb">
-                      <div class="swiper-slide slider_item"><img src="img/work1-1.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img src="img/work1-2.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img src="img/work1-3.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img src="img/work1-4.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-1.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-2.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-3.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-4.png" alt="work1画像"></div>
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -213,10 +206,10 @@ if(isset($_POST['back']) && $_POST['back']){
                 <!-- サムネイル -->
                 <div class="swiper-container slider-thumbnail slider_thumbnail_1">
                   <div class="swiper-wrapper thumb">
-                    <div class="swiper-slide thumb_item"><img src="img/work1-1.png" alt="work1画像"></div>
-                    <div class="swiper-slide thumb_item"><img src="img/work1-2.png" alt="work1画像"></div>
-                    <div class="swiper-slide thumb_item"><img src="img/work1-3.png" alt="work1画像"></div>
-                    <div class="swiper-slide thumb_item"><img src="img/work1-4.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work1-1.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work1-2.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work1-3.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work1-4.png" alt="work1画像"></div>
                   </div>
                 </div>
               </div>
@@ -225,7 +218,7 @@ if(isset($_POST['back']) && $_POST['back']){
         </li>
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-2">
-            <img src="img/work2-1.png" alt="制作物" class="work_item_img">
+            <img data-src="img/work2-1.png" class="lazyload work_item_img" alt="制作物">
             <p class="work_item_title">ランディングページ</p>
           </div>
           <div class="modal modal-2">
@@ -254,10 +247,10 @@ if(isset($_POST['back']) && $_POST['back']){
                 <!-- スライダー-->
                 <div class="swiper-container slider slider_2">
                   <div class="swiper-wrapper slider_thumb">
-                      <div class="swiper-slide slider_item"><img src="img/work2-1.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img src="img/work2-2.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img src="img/work2-3.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img src="img/work2-4.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work2-1.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work2-2.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work2-3.png" alt="work1画像"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work2-4.png" alt="work1画像"></div>
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -265,10 +258,10 @@ if(isset($_POST['back']) && $_POST['back']){
                 <!-- サムネイル -->
                 <div class="swiper-container slider-thumbnail slider_thumbnail_2">
                   <div class="swiper-wrapper thumb">
-                    <div class="swiper-slide thumb_item"><img src="img/work2-1.png" alt="work1画像"></div>
-                    <div class="swiper-slide thumb_item"><img src="img/work2-2.png" alt="work1画像"></div>
-                    <div class="swiper-slide thumb_item"><img src="img/work2-3.png" alt="work1画像"></div>
-                    <div class="swiper-slide thumb_item"><img src="img/work2-4.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work2-1.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work2-2.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work2-3.png" alt="work1画像"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work2-4.png" alt="work1画像"></div>
                   </div>
                 </div>
               </div>
@@ -277,7 +270,7 @@ if(isset($_POST['back']) && $_POST['back']){
         </li>
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-3">
-            <img src="img/coming_soon.png" alt="近日公開" class="work_item_img">
+            <img class="lazyload work_item_img" data-src="img/coming_soon.png" alt="近日公開">
             <p class="work_item_title">近日公開</p>
           </div>
           <div class="modal modal-3">
@@ -304,7 +297,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/html-5.svg" alt="" class="small">
+                  <img data-src="img/html-5.svg" alt="" class="lazyload small">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -317,7 +310,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/css-3.svg" alt="" class="small">
+                  <img data-src="img/css-3.svg" alt="" class="lazyload small">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -330,7 +323,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/sass.svg" alt="" class="middle">
+                  <img data-src="img/sass.svg" alt="" class="lazyload middle">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -343,7 +336,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/jquery.svg" alt="" class="big">
+                  <img data-src="img/jquery.svg" alt="" class="lazyload big">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -356,7 +349,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/bootstrap.svg" alt="" class="small">
+                  <img data-src="img/bootstrap.svg" alt="" class="lazyload small">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -369,7 +362,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/ruby.png" alt="" class="small">
+                  <img data-src="img/ruby.png" alt="" class="lazyload small">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -382,7 +375,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/php.svg" alt="" class="big">
+                  <img data-src="img/php.svg" alt="" class="lazyload big">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -395,7 +388,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/wordpress-icon.svg" alt="" class="middle">
+                  <img data-src="img/wordpress-icon.svg" alt="" class="lazyload middle">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -408,7 +401,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/mysql.svg" alt="" class="middle">
+                  <img data-src="img/mysql.svg" alt="" class="lazyload middle">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -421,7 +414,7 @@ if(isset($_POST['back']) && $_POST['back']){
             <div class="skill_inner">
               <div class="outer">
                 <div class="inner">
-                  <img src="img/git.svg" alt="" class="big">
+                  <img data-src="img/git.svg" alt="" class="lazyload big">
                 </div>
               </div>
               <svg class="circle_wrap" viewBox = "0 0 37 37">
@@ -442,35 +435,35 @@ if(isset($_POST['back']) && $_POST['back']){
         <ul class="profile_list">
           <li class="profile_item">
             <h3 class="year">1999</h3>
-            <img src="img/profile-1.jpg" alt="年表画像" class="profile_img">
+            <img data-src="img/profile-1.jpg" alt="年表画像" class="lazyload profile_img">
             <p class="profile_text">
               11月24日に生まれ「龍世」という名前をもらいました。<br>由来：世界(世)にはばたく(龍)
             </p>
           </li>
           <li class="profile_item">
             <h3 class="year">2006<span class="period">〜</span>2018</h3>
-            <img src="img/profile-2.jpg" alt="年表画像" class="profile_img">
+            <img data-src="img/profile-2.jpg" alt="年表画像" class="lazyload profile_img">
             <p class="profile_text">
               小学6年生〜高校3年生まで野球を続け、主にピッチャーを担当<br>中学では大会で準優勝を経験しました。
             </p>
           </li>
           <li class="profile_item">
             <h3 class="year">2018</h3>
-            <img src="img/profile-3.jpg" alt="年表画像" class="profile_img">
+            <img data-src="img/profile-3.jpg" alt="年表画像" class="lazyload profile_img">
             <p class="profile_text">
               高校卒業後、建築会社に就職。<br>高速道路の柱の鉄骨を組み立てていました。
             </p>
           </li>
           <li class="profile_item">
             <h3 class="year">2020<span class="period">〜</span><span class="now">現在</span></h3>
-            <img src="img/profile-4.jpg" alt="年表画像" class="profile_img">
+            <img data-src="img/profile-4.jpg" alt="年表画像" class="lazyload profile_img">
             <p class="profile_text">
               今後いつ仕事を失うか分からない時代に稼ぐ力をつけるために、需要が高いプログラミングの学習を開始！
             </p>
           </li>
           <li class="profile_item">
             <h3 class="year">2021<span class="period">〜</span><span class="now">現在</span></h3>
-            <img src="img/profile-5.jpg" alt="年表画像" class="profile_img">
+            <img data-src="img/profile-5.jpg" alt="年表画像" class="lazyload profile_img">
             <p class="profile_text">
               知人から動画編集の仕事を紹介され、動画編集も需要が高いため転職を決意！<br>旅行系のエンタメ動画や情報発信動画を編集しています
             </p>
@@ -583,5 +576,16 @@ if(isset($_POST['back']) && $_POST['back']){
       <p class="author">@2022 Otaka Ryusei</p>
     </div>
   </footer>
+
+  
+  <!-- jquery読み込み -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- jquery.inview.js読み込み -->
+  <script src="js/jquery.inview.min.js"></script>
+  <!-- works/スライダー -->
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Lazy Load -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 </body>
 </html>

@@ -137,4 +137,8 @@ $(function(){
       return true;
     }
   });
+
+
+  // 画像遅延読み込み
+  $("img.lazyload").lazyload();
 });

@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-  <script src="js/work1.js"></script>
   <title>森の温泉</title>
   <link rel="icon" href="img/work1-icon.png">
   <link rel="stylesheet" href="css/work1.css">
@@ -37,7 +35,7 @@
             <li><a href="guidance.html" class="sub_nav_item header_guidance_sp">利用案内<span class="pc">・</span><br class="sp">料金・アクセス</a></li>
           </ul> <!-- /.sub_nav_list -->
           <div class="info">
-            <a href="index.html" class="info_logo"><img src="img/logo.png" alt="ロゴ">森の湯</a>
+            <a href="index.html" class="info_logo"><img class="lazyload" data-src="img/logo.png" alt="ロゴ">森の湯</a>
             <p class="info_adress">〒○○○-○○○○ ○○県○○市○-○○-○○</p>
             <p class="info_tel"><span>tel. </span>○○○-○○○-○○○○</p>
           </div> <!-- /.info -->
@@ -70,7 +68,7 @@
   <main>
     <section class="sec_wrap">
       <div class="sec_img_wrap">
-        <img src="img/environment/environment1.jpeg" alt="環境画像" class="sec_img">
+        <img data-src="img/environment/environment1.jpeg" alt="環境画像" class="lazyload sec_img">
       </div> <!-- /.sec_img_wrap -->
       <div class="sec_text_wrap">
         <h2 class="sec_title">豊かな森と水に恵まれた<br>日帰り温泉</h2>
@@ -83,7 +81,7 @@
 
     <section class="sec_wrap">
       <div class="sec_img_wrap">
-        <img src="img/spring/spring2.jpg" alt="温泉画像" class="sec_img">
+        <img data-src="img/spring/spring2.jpg" alt="温泉画像" class="lazyload sec_img">
       </div> <!-- /.sec_img_wrap -->
       <div class="sec_text_wrap">
         <h2 class="sec_title">県内最大級の<br>大露天風呂</h2>
@@ -94,7 +92,7 @@
 
     <section class="sec_wrap">
       <div class="sec_img_wrap">
-        <img src="img/meal/meal7.jpeg" alt="食事画像" class="sec_img">
+        <img data-src="img/meal/meal7.jpeg" alt="食事画像" class="lazyload sec_img">
       </div> <!-- /.sec_img_wrap -->
       <div class="sec_text_wrap">
         <h2 class="sec_title">手づくり･出来たての<br>美味しさを</h2>
@@ -105,7 +103,7 @@
 
     <section class="sec_wrap">
       <div class="sec_img_wrap">
-        <img src="img/facility/facility7.jpeg" alt="館内画像" class="sec_img">
+        <img data-src="img/facility/facility7.jpeg" alt="館内画像" class="lazyload sec_img">
       </div> <!-- /.sec_img_wrap -->
       <div class="sec_text_wrap">
         <h2 class="sec_title">標高1000Mの<br>おもてなし</h2>
@@ -120,7 +118,7 @@
         <li>
           <a href="news_detail/news01.html" class="news_item">
             <figure class="news_item_img_wrap">
-              <img src="img/news/news1.jpg" alt="お知らせ画像" class="news_item_img">
+              <img data-src="img/news/news1.jpg" alt="お知らせ画像" class="lazyload news_item_img">
             </figure>
             <div class="news_text_wrap">
               <p class="news_item_day">2022年1月2日</p>
@@ -131,7 +129,7 @@
         <li>
           <a href="news_detail/news02.html" class="news_item">
             <figure class="news_item_img_wrap">
-              <img src="img/news/news2.jpg" alt="お知らせ画像" class="news_item_img">
+              <img data-src="img/news/news2.jpg" alt="お知らせ画像" class="lazyload news_item_img">
             </figure>
             <div class="news_text_wrap">
               <p class="news_item_day">2022年1月4日</p>
@@ -142,7 +140,7 @@
         <li>
           <a href="news_detail/news03.html" class="news_item">
             <figure class="news_item_img_wrap">
-              <img src="img/news/news3.jpg" alt="お知らせ画像" class="news_item_img">
+              <img data-src="img/news/news3.jpg" alt="お知らせ画像" class="lazyload news_item_img">
             </figure>
             <div class="news_text_wrap">
               <p class="news_item_day">2022年1月5日</p>
@@ -158,7 +156,7 @@
   <footer class="footer">
     <div class="footer_left">
       <div class="info">
-        <a href="index.html" class="info_logo"><img src="img/logo.png" alt="ロゴ"></a>
+        <a href="index.html" class="info_logo"><img data-src="img/logo.png" alt="ロゴ" class="lazyload"></a>
         <p class="info_adress">〒○○○-○○○○ ○○県○○市○-○○-○○</p>
         <p class="info_tel"><span>tel. </span>○○○-○○○-○○○○</p>
       </div>
@@ -203,5 +201,11 @@
       </ul> <!-- /.nav_list -->
     </div> <!-- /.footer_right -->
   </footer> <!-- /.footer -->
+
+  <!-- jquery -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="js/work1.js"></script>
+  <!-- Lazy Load -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 </body>
 </html>

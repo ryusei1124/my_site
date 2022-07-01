@@ -1609,7 +1609,7 @@ footer
     gap: 20px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    width: 80%;
+    width: 100%;
     margin: 40px auto 0;
   }
   .profile .profile_list {

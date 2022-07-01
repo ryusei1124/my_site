@@ -74,5 +74,7 @@ $(window).on('load', function () {
   $('.place_content:first-of-type').addClass("content_active");
 });
 
+// 画像遅延読み込み
+$("img.lazyload").lazyload();
 
 });

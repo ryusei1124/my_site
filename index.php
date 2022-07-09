@@ -287,7 +287,7 @@ if(isset($_POST['back']) && $_POST['back']){
                   <li class="point_item">・背景画像の固定表示</li>
                 </ul>
                 <a href="work3/work3.html" class="demo_link">サイトを見る</a>
-                <a href="" class="code_link" target="_blank">コードを見る</a>
+                <a href="https://github.com/ryusei1124/my_site/tree/main/work3" class="code_link" target="_blank">コードを見る</a>
                 <p class="development_title">【 開発環境 】</p>
                 <ul class="development_list">
                   <li class="development_item">・言語<br><span>HTML、CSS、jQuery</span></li>

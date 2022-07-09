@@ -1,13 +1,10 @@
 $(function(){
   // ナビゲーションをクリック時、スクロールして移動する
   $('a[href^="#"]').click(function(){
-    let speed = 600;
     let href = $(this).attr("href");
-    // hrefが# or “” なら、html or hrefを変数targetに代入
     let target = $(href == "#" || href == "" ? "html" : href);
-    // 対象先の縦の位置を取得して代入
     let position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    $("html, body").animate({scrollTop:position}, "swing");
     return false;
   });
 
@@ -94,6 +91,22 @@ $(function(){
     },
     thumbs: {
       swiper: slider_thumbnail_2
+    }
+  });
+  // work 3つ目
+  var slider_thumbnail_3 = new Swiper('.slider_thumbnail_3', {
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var slider_3 = new Swiper('.slider_3', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: slider_thumbnail_3
     }
   });
   

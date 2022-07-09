@@ -270,6 +270,58 @@ if(isset($_POST['back']) && $_POST['back']){
         </li>
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-3">
+            <img data-src="img/work3-1.png" class="lazyload work_item_img" alt="制作物">
+            <p class="work_item_title">コーポレートサイト</p>
+          </div>
+          <div class="modal modal-3">
+            <div class="modal_bg"></div>
+            <div class="modal_cont">
+              <button class="modal_close"></button>
+              <div class="modal_info">
+                <p class="modal_text">
+                架空の建設会社のコーポレートサイトを作成いたしました。
+                </p>
+                <ul class="point_list">
+                  <li class="point_item">・slickを使用したスライド</li>
+                  <li class="point_item">・スクロール時、上からスライドするヘッダー</li>
+                  <li class="point_item">・背景画像の固定表示</li>
+                </ul>
+                <a href="work3/work3.html" class="demo_link">サイトを見る</a>
+                <a href="" class="code_link" target="_blank">コードを見る</a>
+                <p class="development_title">【 開発環境 】</p>
+                <ul class="development_list">
+                  <li class="development_item">・言語<br><span>HTML、CSS、jQuery</span></li>
+                  <li class="development_item">・環境<br><span>VScode</span></li>
+                  <li class="development_item">・作成期間<br><span>１週間</span></li>
+                </ul>
+              </div> <!-- modal_info-->
+              <div class="modal_contnet_img">
+                <!-- スライダー-->
+                <div class="swiper-container slider slider_3">
+                  <div class="swiper-wrapper slider_thumb">
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work3-1.png" alt="制作物"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work3-2.png" alt="制作物"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work3-3.png" alt="制作物"></div>
+                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work3-4.png" alt="制作物"></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <!-- サムネイル -->
+                <div class="swiper-container slider-thumbnail slider_thumbnail_3">
+                  <div class="swiper-wrapper thumb">
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work3-1.png" alt="制作物"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work3-2.png" alt="制作物"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work3-3.png" alt="制作物"></div>
+                    <div class="swiper-slide thumb_item"><img class="lazyload" data-src="img/work3-4.png" alt="制作物"></div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- modal_cont-->
+          </div> <!-- modal-->
+        </li>
+        <li class="work_item">
+          <div class="modal_open" data-modal-link="modal-3">
             <img class="lazyload work_item_img" data-src="img/coming_soon.png" alt="近日公開">
             <p class="work_item_title">近日公開</p>
           </div>

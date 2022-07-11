@@ -179,8 +179,8 @@ if(isset($_POST['back']) && $_POST['back']){
                   温泉宿のサンプルホームページを作成しました。
                 </p>
                 <ul class="point_list">
-                  <li class="point_item">・背景に動画を表示させています。<br>※低電力モードだと再生されません</li>
-                  <li class="point_item">・各ページの共通部分のコードをまとめて作業しやすくしました。</li>
+                  <li class="point_item">・背景動画<br>※低電力モードだと再生されません</li>
+                  <li class="point_item">・共通部分のコードの使い回し</li>
                 </ul>
                 <a href="work1/index.html" class="demo_link">サイトを見る</a>
                 <a href="https://github.com/ryusei1124/my_site/tree/main/work1" class="code_link" target="_blank">コードを見る</a>
@@ -230,9 +230,9 @@ if(isset($_POST['back']) && $_POST['back']){
                 老犬介護サービスのサンプルLPを作成しました。
                 </p>
                 <ul class="point_list">
-                  <li class="point_item">・inview.jsを使用しイラストに動きをつけています</li>
-                  <li class="point_item">・要素をCSSのpositionやmarginを使用し様々な場所に設置しています</li>
-                  <li class="point_item">・スライドはjQueryのslickを使用</li>
+                  <li class="point_item">・画面表示時にイラストのフェードイン｜inview.js</li>
+                  <li class="point_item">・イラストなどの固定表示</li>
+                  <li class="point_item">・スライドショー｜slick</li>
                 </ul>
                 <a href="work2/work2.html" class="demo_link">サイトを見る</a>
                 <a href="https://github.com/ryusei1124/my_site/tree/main/work2" class="code_link" target="_blank">コードを見る</a>
@@ -282,7 +282,8 @@ if(isset($_POST['back']) && $_POST['back']){
                 架空の建設会社のコーポレートサイトを作成いたしました。
                 </p>
                 <ul class="point_list">
-                  <li class="point_item">・slickを使用したスライド</li>
+                  <li class="point_item">・ズームアウトするスライドショー｜Vegas Background SlideShow</li>
+                  <li class="point_item">・ローデイング｜ProgressBar.js</li>
                   <li class="point_item">・スクロール時、上からスライドするヘッダー</li>
                   <li class="point_item">・背景画像の固定表示</li>
                 </ul>

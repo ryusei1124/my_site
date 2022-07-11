@@ -13,11 +13,19 @@
   <!-- slick -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- Vegas Background SlideShow -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="splash" class="splash">
+    <div id="splash_text" class="splash_text"></div>
+    <div class="loader_cover loader_cover-up"></div>
+    <div class="loader_cover loader_cover-down"></div>
+  </div>
+
   <header class="header" id="header">
     <div class="header_inner">
       <a href="../index.php#works" class="return_btn">戻る</a>
@@ -38,13 +46,7 @@
   </header>
 
   <div class="mainvisual" id="mainvisual">
-    <div class="visual_list">
-      <div class="visual_item"><img class="lazyload" data-src src="img/main-1.jpg" alt=""></div>
-      <div class="visual_item"><img class="lazyload" data-src src="img/main-2.jpg" alt=""></div>
-      <div class="visual_item"><img class="lazyload" data-src src="img/main-3.jpg" alt=""></div>
-      <div class="visual_item"><img class="lazyload" data-src src="img/main-4.jpg" alt=""></div>
-      <div class="visual_item"><img class="lazyload" data-src src="img/main-5.jpg" alt=""></div>
-    </div>
+    <div class="visual_list"></div>
     <div class="concept_wrap">
       <h2 class="concept_ttl">より安心、<br>より安全に。</h2>
       <p class="concept_txt">当社は土木事業専門の鉄筋工事会社です。</p>
@@ -207,11 +209,15 @@
 
 
   <!-- jquery -->
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="js/work3.js"></script>
   <!-- slick -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Lazy Load -->
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+  <!-- Vegas Background SlideShow -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+  <!-- ProgressBar.js -->
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 </body>
 </html>

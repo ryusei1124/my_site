@@ -44,15 +44,11 @@ if(isset($_POST['back']) && $_POST['back']){
   }
 }else if(isset($_POST['send']) && $_POST['send']){
   if(!$_POST['token'] || !$_SESSION['email']){
-    // $errmessage[] = "不正な処理が行われました";
-    // $_SESSION = array();
     $_SESSION['name'] = "";
     $_SESSION['email'] = "";
     $_SESSION['message'] = "";
     $mode = "input";
   }else if($_POST['token'] != $_SESSION['token']){
-    // $errmessage[] = "不正な処理が行われました";
-    // $_SESSION = array();
     $_SESSION['name'] = "";
     $_SESSION['email'] = "";
     $_SESSION['message'] = "";
@@ -87,8 +83,8 @@ if(isset($_POST['back']) && $_POST['back']){
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Otaka Ryusei" />
   <meta property="og:description" content="ポートフォリオを作成いたしました。よければご覧ください。" />
-  <meta property="og:site_name" content="my_site" />
-  <meta property="og:image" content="https://i.gyazo.com/417b9202556fc293ee1c2e7d88b2b908.jpg" />
+  <meta property="og:site_name" content="ryusei_site" />
+  <meta property="og:image" content="https://i.gyazo.com/417b9202556fc293ee1c2e7d88b2b908.jpg" /> 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ryusei_studying" />
   <meta charset="UTF-8">
@@ -122,19 +118,21 @@ if(isset($_POST['back']) && $_POST['back']){
           <li class="nav_item pc_nav_item">
             <p class="nav_site_btn">サイトについて</p>
             <ul class="portfolio_list_pc">
-              <li class="nav_item"><a href="#about_me" class="nav_btn">About me</a></li>
-              <li class="nav_item"><a href="#works" class="nav_btn">Works</a></li>
-              <li class="nav_item"><a href="#skills" class="nav_btn">Skills</a></li>
-              <li class="nav_item"><a href="#profile" class="nav_btn">Profile</a></li>
+              <li class="nav_item"><a href="#about_me" class="nav_btn">自己紹介</a></li>
+              <li class="nav_item"><a href="#works" class="nav_btn">制作物</a></li>
+              <li class="nav_item"><a href="#achievement" class="nav_btn">実績</a></li>
+              <li class="nav_item"><a href="#skills" class="nav_btn">スキル</a></li>
+              <li class="nav_item"><a href="#profile" class="nav_btn">プロフィール</a></li>
             </ul>
           </li>
           <li class="nav_item sp_nav_item">
             <p class="nav_site_btn">サイトについて</p>
             <ul class="portfolio_list_sp">
-              <li class="nav_item"><a href="#about_me" class="nav_btn">About me</a></li>
-              <li class="nav_item"><a href="#works" class="nav_btn">Works</a></li>
-              <li class="nav_item"><a href="#skills" class="nav_btn">Skills</a></li>
-              <li class="nav_item"><a href="#profile" class="nav_btn">Profile</a></li>
+              <li class="nav_item"><a href="#about_me" class="nav_btn">自己紹介</a></li>
+              <li class="nav_item"><a href="#works" class="nav_btn">制作物</a></li>
+              <li class="nav_item"><a href="#achievement" class="nav_btn">実績</a></li>
+              <li class="nav_item"><a href="#skills" class="nav_btn">スキル</a></li>
+              <li class="nav_item"><a href="#profile" class="nav_btn">プロフィール</a></li>
             </ul>
           </li>
           <li class="nav_item"><a href="#contact" class="nav_btn">問い合わせ</a></li>
@@ -147,14 +145,14 @@ if(isset($_POST['back']) && $_POST['back']){
 
   <section class="section about_me" id="about_me">
     <div class="sec_inner">
-      <h2 class="section_title">About me</h2>
+      <h2 class="section_title">自己紹介</h2>
       <div class="about_me_content">
         <figure class="about_me_img">
           <img data-src="img/me.JPG" class="lazyload" alt="me_img">
         </figure>
         <div class="content_text_wrap">
           <p class="self_int">
-            大高龍世<br>1999年11月24日生まれ<br>高校卒業後、建築会社に就職。<br>知人の紹介で動画編集の仕事に転職。<br>旅行系のエンタメ動画や情報発信動画を編集。<br>現在は動画編集の仕事をしながらweb系のプログラミング言語を学習中！<br>お客様に満足していただける「即レスエンジニア」を目指してます！
+            大高龍世<br>1999年11月24日生まれ<br>高校卒業後、建築会社に就職。<br>知人の紹介で動画編集の仕事に転職。<br>旅行系のエンタメ動画や情報発信動画を編集。<br>現在は動画編集の仕事をしながらweb系のプログラミング言語を学習中！<br>お客様への貢献を目標に活動しております
           </p>
         </div> <!-- content_text_wrap-->
       </div> <!-- about_me_content-->
@@ -163,12 +161,11 @@ if(isset($_POST['back']) && $_POST['back']){
 
   <section class="section works" id="works">
     <div class="sec_inner">
-      <h2 class="section_title">Works</h2>
+      <h2 class="section_title">制作物</h2>
       <ul class="works_list">
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-1">
-            <img data-src="img/work1-1.png" class="lazyload work_item_img" alt="制作物">
-            <p class="work_item_title">ホームページ</p>
+            <img data-src="img/work1-1.png" class="lazyload work_item_img" alt="">
           </div>
           <div class="modal modal-1">
             <div class="modal_bg"></div>
@@ -176,10 +173,12 @@ if(isset($_POST['back']) && $_POST['back']){
               <button class="modal_close"></button>
               <div class="modal_info">
                 <p class="modal_text">
-                  温泉宿のサンプルホームページを作成しました。
+                  架空の温泉宿のホームページを作成しました。
                 </p>
                 <ul class="point_list">
-                  <li class="point_item">・背景動画<br>※低電力モードだと再生されません</li>
+                  <li class="point_item">・スクロールによって表示切り替え</li>
+                  <li class="point_item">・背景はanimationを使い画像を動かしている</li>
+                  <li class="point_item">・画面遷移時にフェードインで表示</li>
                   <li class="point_item">・共通部分のコードの使い回し</li>
                 </ul>
                 <a href="work1/index.html" class="demo_link">サイトを見る</a>
@@ -195,10 +194,10 @@ if(isset($_POST['back']) && $_POST['back']){
                 <!-- スライダー-->
                 <div class="swiper-container slider slider_1">
                   <div class="swiper-wrapper slider_thumb">
-                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-1.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-2.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-3.png" alt="work1画像"></div>
-                      <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-4.png" alt="work1画像"></div>
+                    <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-1.png" alt="work1画像"></div>
+                    <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-2.png" alt="work1画像"></div>
+                    <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-3.png" alt="work1画像"></div>
+                    <div class="swiper-slide slider_item"><img class="lazyload" data-src="img/work1-4.png" alt="work1画像"></div>
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -218,8 +217,7 @@ if(isset($_POST['back']) && $_POST['back']){
         </li>
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-2">
-            <img data-src="img/work2-1.png" class="lazyload work_item_img" alt="制作物">
-            <p class="work_item_title">ランディングページ</p>
+            <img data-src="img/work2-1.png" class="lazyload work_item_img" alt="">
           </div>
           <div class="modal modal-2">
             <div class="modal_bg"></div>
@@ -270,8 +268,7 @@ if(isset($_POST['back']) && $_POST['back']){
         </li>
         <li class="work_item">
           <div class="modal_open" data-modal-link="modal-3">
-            <img data-src="img/work3-1.png" class="lazyload work_item_img" alt="制作物">
-            <p class="work_item_title">コーポレートサイト</p>
+            <img data-src="img/work3-1.png" class="lazyload work_item_img" alt="">
           </div>
           <div class="modal modal-3">
             <div class="modal_bg"></div>
@@ -321,27 +318,60 @@ if(isset($_POST['back']) && $_POST['back']){
             </div> <!-- modal_cont-->
           </div> <!-- modal-->
         </li>
-        <li class="work_item">
-          <div class="modal_open" data-modal-link="modal-3">
-            <img class="lazyload work_item_img" data-src="img/coming_soon.png" alt="近日公開">
-            <p class="work_item_title">近日公開</p>
-          </div>
-          <div class="modal modal-3">
-            <div class="modal_bg"></div>
-            <div class="modal_cont coming_soon">
-              <button class="modal_close"></button>
-              <p>近日公開</p>
-            </div> <!-- modal_cont-->
-          </div> <!-- modal-->
-        </li>
       </ul> <!-- works_list-->
     </div> <!-- sec_inner-->
   </section> <!-- works-->
 
+  <section class="section achievement" id="achievement">
+    <div class="sec_inner">
+      <div class="container">
+        <h2 class="section_title">実績</h2>
+        <div class="achievement-list__wrap">
+          <table class="achievement-list">
+            <thead>
+              <tr>
+                <th>日付</th>
+                <th>案件内容</th>
+                <th>制作期間</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5/27</td>
+                <td>LP制作(1P)</td>
+                <td>3日間</td>
+                <td>コミュニケーション面で高く評価をいただきました</td>
+              </tr>
+              <tr>
+                <td>7/4</td>
+                <td>LP制作(1P)</td>
+                <td>3日間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7/20</td>
+                <td>LP制作(10P)</td>
+                <td>7日間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7/24</td>
+                <td>WordPressのElementor構築(2P)</td>
+                <td>中断</td>
+                <td>クライアント側から中断と連絡があった為</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section skills" id="skills">
     <div class="sec_inner">
       <div class="container">
-        <h2 class="section_title">My Skill set</h2>
+        <h2 class="section_title">スキル</h2>
         <p class="skill_text">
           実務、学習経験のあるスキルをまとめました。<br>今後は実務を積んでいきスキルアップをしていきたいと考えております。
         </p>
@@ -484,13 +514,13 @@ if(isset($_POST['back']) && $_POST['back']){
   <section class="section profile" id="profile">
     <div class="sec_inner">
       <div class="container">
-        <h2 class="section_title">Profile</h2>
+        <h2 class="section_title">プロフィール</h2>
         <ul class="profile_list">
           <li class="profile_item">
             <h3 class="year">1999</h3>
             <img data-src="img/profile-1.jpg" alt="年表画像" class="lazyload profile_img">
             <p class="profile_text">
-              11月24日に生まれ「龍世」という名前をもらいました。<br>由来：世界(世)にはばたく(龍)
+              11月24日に生誕。名前：「龍世」<br>由来：世界(世)にはばたく(龍)
             </p>
           </li>
           <li class="profile_item">
@@ -525,7 +555,8 @@ if(isset($_POST['back']) && $_POST['back']){
         <p class="goal">売上に貢献できる人材を目指して頑張っています！</p>
       </div> <!-- container-->
     </div> <!-- sec_inner-->
-  </section> <!-- profile-->
+  </section> 
+  <!-- profile-->
 
   <section class="section contact" id="contact">
     <div class="sec_inner">
@@ -586,7 +617,7 @@ if(isset($_POST['back']) && $_POST['back']){
               <div class="form_field long">
                 <input class="form_btn" type="submit" name="confirm" value="確認">
               </div>
-            </form> <!-- contact_form -->
+            </form>
           <?php }else if($mode == 'confirm'){ ?>
             <!-- 確認画面 -->
             <div class="confirm_wrap">
@@ -610,14 +641,15 @@ if(isset($_POST['back']) && $_POST['back']){
                     <input class="form_btn" type="submit" name="back" value="戻る">
                     <input class="form_btn submit_btn" type="submit" name="send" value="送信">
                   </div>
-                </form> <!-- contact_form -->
-              </div> <!-- confirm_inner -->
-            </div> <!-- confirm_wrap -->
+                </form> 
+              </div> 
+            </div>  
           <?php } ?>
-        </div> <!-- contact_cont-->
-      </div> <!-- container-->
-    </div> <!-- sec_inner-->
-  </section> <!-- contact-->
+        </div> 
+      </div> 
+    </div> 
+  </section>
+
 
   <div class="thanks" id="thanks">
     <p class="thanks_message">Thanks for watching!!</p>

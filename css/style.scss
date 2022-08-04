@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@mixin slideUp {
+  position: absolute;
+  bottom: 10px;
+}
+
 html {
   font-size: 100%;
 }
@@ -43,9 +48,10 @@ li {
 
 .section{
   padding: 100px 0;
+  position: relative;
   .sec_inner{
     width: 85%;
-    background-color: rgba(240, 240, 240, .5);
+    background-color: #fff;
     border-radius: 10px;
     padding: 40px 0;
     margin: 0 auto;
@@ -57,13 +63,6 @@ li {
   font-weight: 400;
   text-align: center;
   margin-bottom: 40px;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: .5s;
-  &.start{
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 
@@ -387,6 +386,9 @@ works
                   font-size: 1.5rem;
                 }
               }
+              img{
+                z-index: 0;
+              }
             }
             //サムネイル
             .slider-thumbnail {
@@ -418,11 +420,13 @@ works
 
 
 /*--------------------
-skills
+achievement
 ----------------------*/ 
-.skills{
-  .skill_text{
-    text-align: center;
+.achievement{
+  &-list{
+    border-collapse: collapse;
+    min-width: 500px;
+    margin: 0 auto;
     opacity: 0;
     transform: translateY(50px);
     transition: .5s;
@@ -431,6 +435,35 @@ skills
       opacity: 1;
       transform: translateY(0);
     }
+    th{
+      white-space: nowrap;
+      padding: 10px 20px;
+      border-bottom: 1px solid #000;
+      background-color: #ddd;
+    }
+    td{
+      padding: 10px;
+      &:last-child{
+        border-right: none;
+      }
+      &:not(:last-child){
+        text-align: center;
+      }
+    }
+    tbody tr:nth-child(even){
+      background-color: #eee;
+    }
+  }
+}
+
+
+
+/*--------------------
+skills
+----------------------*/ 
+.skills{
+  .skill_text{
+    text-align: center; 
   }
   .skill_list{
     margin-top: 40px;
@@ -441,40 +474,40 @@ skills
     opacity: 0;
     transform: translateY(50px);
     transition: .5s;
-    transition-delay: .8s;
+    transition-delay: .3s;
     &.start{
       opacity: 1;
       transform: translateY(0);
       .skill_item .skill_inner .circle_wrap{
         .html{
-          animation: html 1s 1.5s linear forwards;
+          animation: html 1s .8s linear forwards;
         }
         .css{
-          animation: css 1s 1.5s linear forwards;
+          animation: css 1s .8s linear forwards;
         }
         .sass{
-          animation: sass 1s 1.5s linear forwards;
+          animation: sass 1s .8s linear forwards;
         }
         .jquery{
-          animation: jquery 1s 1.5s linear forwards;
+          animation: jquery 1s .8s linear forwards;
         }
         .bootstrap{
-          animation: bootstrap 1s 1.5s linear forwards;
+          animation: bootstrap 1s .8s linear forwards;
         }
         .ruby{
-          animation: ruby 1s 1.5s linear forwards;
+          animation: ruby 1s .8s linear forwards;
         }
         .php{
-          animation: php 1s 1.5s linear forwards;
+          animation: php 1s .8s linear forwards;
         }
         .wordpress{
-          animation: wordpress 1s 1.5s linear forwards;
+          animation: wordpress 1s .8s linear forwards;
         }
         .mysql{
-          animation: mysql 1s 1.5s linear forwards;
+          animation: mysql 1s .8s linear forwards;
         }
         .git{
-          animation: git 1s 1.5s linear forwards;
+          animation: git 1s .8s linear forwards;
         }
       }
     }
@@ -1282,6 +1315,12 @@ footer
           } 
         } 
       }
+    }
+  }
+
+  .achievement{
+    &-list__wrap{
+      overflow-x: scroll;
     }
   }
 

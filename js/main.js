@@ -111,11 +111,9 @@ $(function(){
   });
   
 
-  $('.section_title, .about_me_content, .skill_text, .contact_text, .contact_form, .sns_list, .skill_list, .errmessage, .success, .profile_item').on('inview', function(event, isInView){
+  $('.about_me_content, .contact_text, .contact_form, .sns_list, .skill_list, .achievement-list, .errmessage, .success, .profile_item').on('inview', function(event, isInView){
     if (isInView) {
       $(this).addClass('start');
-    }else{
-      $(this).removeClass('start');
     }
   });
 

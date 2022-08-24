@@ -357,9 +357,21 @@ if(isset($_POST['back']) && $_POST['back']){
               </tr>
               <tr>
                 <td>7/24</td>
-                <td>WordPressのElementor構築(2P)</td>
+                <td>WordPress/Elementor構築を用いたLP制作(2P)</td>
                 <td>中断</td>
                 <td>クライアント側から中断と連絡があった為</td>
+              </tr>
+              <tr>
+                <td>8/10</td>
+                <td>WordPressを用いたLP作成(5P)</td>
+                <td>7日間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>8/21</td>
+                <td>WordPressを用いたコーポレートサイト修正(7P)</td>
+                <td>8日間</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -387,7 +399,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle html" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験あり</p>
+            <p class="skill_item_txt">実務経験あり✖️5</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -400,7 +412,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle css" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験あり</p>
+            <p class="skill_item_txt">実務経験あり✖️5</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -413,7 +425,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle sass" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験あり</p>
+            <p class="skill_item_txt">実務経験あり✖️5</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -426,7 +438,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle jquery" cx="50%" cy="50%" r="15.9154"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験なし、<br>基本的な機能は実装可能</p>
+            <p class="skill_item_txt">実務経験あり✖️3</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -439,7 +451,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle bootstrap" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験あり</p>
+            <p class="skill_item_txt">実務経験あり✖️1</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -465,7 +477,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle php" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験なし、<br>学習で問い合わせ機能など作成</p>
+            <p class="skill_item_txt">実務経験あり✖️2</p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">
@@ -478,7 +490,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle wordpress" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験なし、<br>wordpress化可能</p>
+            <p class="skill_item_txt">実務経験あり×2<br></p>
           </li>
           <li class="skill_item">
             <div class="skill_inner">

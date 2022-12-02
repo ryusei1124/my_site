@@ -136,7 +136,6 @@ if(isset($_POST['back']) && $_POST['back']){
             </ul>
           </li>
           <li class="nav_item"><a href="#contact" class="nav_btn">問い合わせ</a></li>
-          <li class="nav_item"><a href="#thanks" class="nav_btn">Thanks</a></li>
         </ul> <!-- nav_list-->
       </div> <!-- header_inner-->
       <div class="outer_frame"></div>
@@ -152,7 +151,7 @@ if(isset($_POST['back']) && $_POST['back']){
         </figure>
         <div class="content_text_wrap">
           <p class="self_int">
-            大高龍世<br>1999年11月24日生まれ<br>高校卒業後、建築会社に就職。<br>知人の紹介で動画編集の仕事に転職。<br>旅行系のエンタメ動画や情報発信動画を編集。<br>現在は動画編集の仕事をしながらweb系のプログラミング言語を学習中！<br>お客様への貢献を目標に活動しております
+            大高龍世<br>1999年11月24日生まれ<br>高校卒業後、建築会社に就職。<br>知人の紹介で動画編集の仕事に転職。<br>旅行系のエンタメ動画や情報発信動画を編集。<br>現在は動画編集の仕事をしながらコーダーとしてweb制作の案件を受けています。<br>お客様への貢献を目標に活動しております！
           </p>
         </div> <!-- content_text_wrap-->
       </div> <!-- about_me_content-->
@@ -330,7 +329,7 @@ if(isset($_POST['back']) && $_POST['back']){
           <table class="achievement-list">
             <thead>
               <tr>
-                <th>日付</th>
+                <th>受注月</th>
                 <th>案件内容</th>
                 <th>制作期間</th>
                 <th>備考</th>
@@ -338,39 +337,69 @@ if(isset($_POST['back']) && $_POST['back']){
             </thead>
             <tbody>
               <tr>
-                <td>5/27</td>
-                <td>LP制作(1P)</td>
-                <td>3日間</td>
-                <td>コミュニケーション面で高く評価をいただきました</td>
-              </tr>
-              <tr>
-                <td>7/4</td>
-                <td>LP制作(1P)</td>
+                <td>5月</td>
+                <td>LP制作</td>
                 <td>3日間</td>
                 <td></td>
               </tr>
               <tr>
-                <td>7/20</td>
-                <td>LP制作(10P)</td>
+                <td>7月</td>
+                <td>LP制作</td>
+                <td>3日間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7月</td>
+                <td>LP制作</td>
                 <td>7日間</td>
                 <td></td>
               </tr>
               <tr>
-                <td>7/24</td>
-                <td>WordPress/Elementor構築を用いたLP制作(2P)</td>
+                <td>7月</td>
+                <td>LP制作/WordPress(Elementor)</td>
                 <td>中断</td>
                 <td>クライアント側から中断と連絡があった為</td>
               </tr>
               <tr>
-                <td>8/10</td>
-                <td>WordPressを用いたLP作成(5P)</td>
+                <td>8月</td>
+                <td>LP作成/WordPress</td>
                 <td>7日間</td>
                 <td></td>
               </tr>
               <tr>
-                <td>8/21</td>
-                <td>WordPressを用いたコーポレートサイト修正(7P)</td>
+                <td>8月</td>
+                <td>コーポレートサイト修正/WordPress</td>
                 <td>8日間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9月</td>
+                <td>コーポレートサイト修正</td>
+                <td>1週間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10,11月</td>
+                <td>サービスサイト制作</td>
+                <td>6週間</td>
+                <td>githubを用いたチーム開発</td>
+              </tr>
+              <tr>
+                <td>10月</td>
+                <td>ホームページ制作</td>
+                <td>1週間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11月</td>
+                <td>ホームページ修正</td>
+                <td>6日間</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11月</td>
+                <td>コーポレートサイト修正</td>
+                <td>5日間</td>
                 <td></td>
               </tr>
             </tbody>
@@ -516,7 +545,7 @@ if(isset($_POST['back']) && $_POST['back']){
                 <circle class="circle git" cx="50%" cy="50%" r="15.9154" stroke-linecap="round"></circle>
               </svg>
             </div>
-            <p class="skill_item_txt">実務経験なし、<br>学習でgithubを使用する際に使用</p>
+            <p class="skill_item_txt">実務経験あり、<br>チーム開発でgithubを使用</p>
           </li>
         </ul> <!-- skill_list-->
       </div> <!-- container-->
